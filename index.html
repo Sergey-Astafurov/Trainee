@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Тестовое задание</title>
+</head>
+
+<body>
+  <h1 class="text-2xl text-center">Тестовое задание</h1>
+  <div class="container mx-auto">
+
+    <p class="text-center font-mono border-b-4 pb-5"><b>задание</b>: сверстать симпатичную адаптивную (!) страничку
+      продажи подписок на некий сервис с использованием чистого CSS, или Bootstrap 5, или Tailwind. Есть 4 основных
+      пакета услуг, и ещё пять вариантов дополнительных (в перспективе их может быть больше), с разными сроками
+      действия. Обязательно (!) выложить на гитхаб, приложить README с описанием работы и порядком действий для её
+      локального запуска. Желательно захостить, например на том же гитхабе (это бесплатно). Срок - неделя.</p>
+    <div class="subscriptions text-center text-2xl font-bold mb-5 font-mono">Список услуг</div>
+    <ul class="subscriptions__list flex flex-wrap justify-between px-4 md:px-0">
+      <li
+        class="subscriptions__item border-4 border-pink-700 rounded-xl p-4 md:w-56 w-full  flex flex-col gap-3 justify-center items-center mb-4  ">
+        <div class="subscriptions__title text-xl">Базовый</div>
+        <div class=""> Услуга 1 </div>
+        <div class=""> Услуга 2 </div>
+        <div class="subscriptions__item__price text-xl text-pink-700 mt-auto ">Цена</div>
+        <button class=" border-t-4 border-pink-700 pt-4 text-2xl text-pink-800">Купить</button>
+      </li>
+      <li
+        class="subscriptions__item border-4 border-pink-700 rounded-xl p-4 md:w-56 w-full  flex flex-col gap-3 justify-center items-center mb-4  ">
+        <div class="subscriptions__title text-xl">Улучшенный</div>
+        <div class=""> Услуга 1 </div>
+        <div class=""> Услуга 2 </div>
+        <div class=""> Услуга 3 </div>
+        <div class="subscriptions__item__price text-xl text-pink-700 mt-auto ">Цена</div>
+        <button class=" border-t-4 border-pink-700 pt-4 text-2xl text-pink-800">Купить</button>
+      </li>
+      <li
+        class="subscriptions__item border-4 border-pink-700 rounded-xl p-4 md:w-56 w-full  flex flex-col gap-3 justify-center items-center mb-4  ">
+        <div class="subscriptions__title text-xl">Улучшенный 1</div>
+        <div class=""> Услуга 1 </div>
+        <div class=""> Услуга 2 </div>
+        <div class=""> Услуга 3 </div>
+        <div class=""> Услуга 4 </div>
+        <div class="subscriptions__item__price text-xl text-pink-700 mt-auto ">Цена</div>
+        <button class=" border-t-4 border-pink-700 pt-4 text-2xl text-pink-800">Купить</button>
+      </li>
+      <li
+        class="subscriptions__item border-4 border-pink-700 rounded-xl p-4 md:w-56 w-full  flex flex-col gap-3 justify-center items-center mb-4  ">
+        <div class="subscriptions__title text-xl">Улучшенный 2</div>
+        <div class=""> Услуга 1 </div>
+        <div class=""> Услуга 2 </div>
+        <div class=""> Услуга 5 </div>
+        <div class=""> Услуга 3 </div>
+        <div class="subscriptions__item__price text-xl text-pink-700 mt-auto ">Цена</div>
+        <button class=" border-t-4 border-pink-700 pt-4 text-2xl text-pink-800">Купить</button>
+      </li>
+
+    </ul>
+    <h3 class="text-center text-2xl mb-5">Дополнительные услуги</h3>
+    <ul class="flex flex-wrap mb-10 justify-between">
+      <li class="bg-pink-800 text-white rounded-xl p-5 md:w-52 flex flex-col mb-4 w-full">
+        <div class="text-xl mb-2 font-bold text-center"> Услуга 1</div>
+        <div class="mb-5">Товарищи! консультация с широким активом позволяет оценить значение направлений прогрессивного
+          развития. Значимость этих проблем  </div>
+        <button class="bg-pink-600 py-4 px-6 rounded-xl text-xl mt-auto"> подробнее </button>
+      </li>
+      <li class="bg-pink-800 text-white rounded-xl p-5 md:w-52 flex flex-col mb-4 w-full">
+        <div class="text-xl mb-2 font-bold text-center"> Услуга 1</div>
+        <div class="mb-5">Товарищи! консультация с широким активом проблем настолько очевидна, </div>
+        <button class="bg-pink-600 py-4 px-6 rounded-xl text-xl mt-auto"> подробнее </button>
+      </li>
+      <li class="bg-pink-800 text-white rounded-xl p-5 md:w-52 flex flex-col mb-4 w-full">
+        <div class="text-xl mb-2 font-bold text-center"> Услуга 1</div>
+        <div class="mb-5">Товарищи! консультация с широким активом позволяет оценить значение направлений прогрессивного
+          развития. Значимость этих проблем настолько очевидна, </div>
+        <button class="bg-pink-600 py-4 px-6 rounded-xl text-xl mt-auto"> подробнее </button>
+      </li>
+      <li class="bg-pink-800 text-white rounded-xl p-5 md:w-52 flex flex-col mb-4 w-full">
+        <div class="text-xl mb-2 font-bold text-center"> Услуга 1</div>
+        <div class="mb-5"> широким активом позволяет оценить значение направлений прогрессивного
+          развития. Значимость этих проблем настолько очевидна, </div>
+        <button class="bg-pink-600 py-4 px-6 rounded-xl text-xl mt-auto"> подробнее </button>
+      </li>
+      <li class="bg-pink-800 text-white rounded-xl p-5 md:w-52 flex flex-col mb-4 w-full">
+        <div class="text-xl mb-2 font-bold text-center"> Услуга 1</div>
+        <div class="mb-5">о очевидна, </div>
+        <button class="bg-pink-600 py-4 px-6 rounded-xl text-xl mt-auto "> подробнее </button>
+      </li>
+    </ul>
+
+  </div>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
